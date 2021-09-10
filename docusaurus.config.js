@@ -4,15 +4,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 (module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  title: 'SHE Developer Documentation',
+  tagline: 'Develop alongside SHE',
+  url: 'https://she.energy',
+  baseUrl: '/dev-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ShenaniganDApp', // Usually your GitHub org/user name.
+  projectName: 'dev-docs', // Usually your repo name.
 
   presets: [
     [
@@ -22,13 +22,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
+          editUrl: 'https://github.com/ShenaniganDapp/dev-docs/edit/master/website',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
+            'https://github.com/ShenaniganDapp/dev-docs/edit/master/website/blog',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -41,21 +41,21 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Shenanigan',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'SHE Logo',
+          src: 'img/logo.png',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'overview',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ShenaniganDapp',
             label: 'GitHub',
             position: 'right',
           },
@@ -68,8 +68,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Docs',
+                to: '/docs/overview',
               },
             ],
           },
@@ -77,16 +77,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://she.energy/join',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/she_dapp',
               },
             ],
           },
@@ -99,12 +95,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/ShenaniganDapp',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Shenanigan Tech LLC. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
